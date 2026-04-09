@@ -25,6 +25,17 @@ const server = http.createServer((req, res) => {
                         </div>
                     `).reverse().join('')}
                 </div>
+                <input id="message" placeholder="Type something...">
+                <button onclick="send(document.getElementById('message'))">Send</button>
+                <script>
+                    function send() {
+                        const input = document.getElementById('messageInput');
+                        if (input.value.trim() !== "") {
+                            socket.send(input.value);
+                            input.value = "";
+                        }
+                    }
+                </script>
             </body>
         </html>
     `;
