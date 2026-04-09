@@ -29,7 +29,7 @@ const server = http.createServer((req, res) => {
                 <button onclick="send(document.getElementById('message'))">Send</button>
                 <script>
                     function send() {
-                        const input = document.getElementById('messageInput');
+                        const input = document.getElementById('message');
                         if (input.value.trim() !== "") {
                             socket.send(input.value);
                             input.value = "";
