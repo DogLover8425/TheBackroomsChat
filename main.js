@@ -28,6 +28,7 @@ const server = http.createServer((req, res) => {
                 <input id="message" placeholder="Type something...">
                 <button onclick="send(document.getElementById('message'))">Send</button>
                 <script>
+                    const socket = new WebSocket(window.location.origin.replace(/^http/, 'ws'));
                     function send() {
                         const input = document.getElementById('message');
                         if (input.value.trim() !== "") {
