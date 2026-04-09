@@ -1,0 +1,17 @@
+{
+  "name": "the-backrooms-chat",
+  "version": "1.0.0",
+  "description": "AEG Mainframe Chat Relay",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ws": "^8.20.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
